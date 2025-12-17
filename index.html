@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunflower Soul</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              charcoal: {
+                800: '#363636',
+                900: '#1a1a1a',
+                950: '#121212',
+              },
+              sunflower: {
+                50: '#fefce8',
+                100: '#fef9c3',
+                200: '#fef08a',
+                300: '#fde047',
+                400: '#facc15',
+                500: '#eab308',
+                600: '#ca8a04',
+                800: '#854d0e',
+                900: '#713f12',
+                950: '#422006',
+              },
+              paper: '#fdfbf7',
+            },
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', 'serif'],
+              display: ['"Playfair Display"', 'serif'],
+              script: ['"Pinyon Script"', 'cursive'],
+            },
+            animation: {
+              'blob': 'blob 10s infinite',
+              'sway-slow': 'sway 15s ease-in-out infinite alternate',
+              'sway-slower': 'sway 20s ease-in-out infinite alternate-reverse',
+              'sway-medium': 'sway 10s ease-in-out infinite alternate',
+              'breathe': 'breathe 12s ease-in-out infinite',
+              'cursor': 'cursor .75s step-end infinite',
+              'float': 'float 8s ease-in-out infinite',
+            },
+            keyframes: {
+              blob: {
+                '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                '100%': { transform: 'translate(0px, 0px) scale(1)' },
+              },
+              sway: {
+                '0%': { transform: 'rotate(-5deg) scale(1)' },
+                '100%': { transform: 'rotate(5deg) scale(1.05)' },
+              },
+              float: {
+                 '0%': { transform: 'translateY(0px) rotate(0deg)' },
+                 '50%': { transform: 'translateY(-15px) rotate(2deg)' },
+                 '100%': { transform: 'translateY(0px) rotate(0deg)' },
+              },
+              breathe: {
+                '0%': { opacity: '0.15', transform: 'scale(1)' },
+                '50%': { opacity: '0.25', transform: 'scale(1.05)' },
+                '100%': { opacity: '0.15', transform: 'scale(1)' },
+              },
+              cursor: {
+                '0%, 100%': { borderColor: 'transparent' },
+                '50%': { borderColor: 'rgba(253, 224, 71, 0.8)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #1a1a1a; /* Charcoal 900 */
+        color: #fafaf9;
+        overflow-x: hidden;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1a1a1a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #44403c;
+        border-radius: 3px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
